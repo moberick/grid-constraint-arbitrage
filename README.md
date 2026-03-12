@@ -1,5 +1,7 @@
 # UK Grid BESS Arbitrage Modeler
 
+🔴 Live Dashboard: Click Here to Run the Arbitrage Modeler: https://uk-b6-arbitrage-moberick.streamlit.app
+
 An interactive Python modeling suite designed to calculate the financial impact of the **UK B6 boundary constraint** network bottlenecks and simulate the mitigating arbitrage economics of a Battery Energy Storage System (BESS).
 
 The pipeline automatically fetches real-time Bid-Offer Acceptance Level Flagged (BOALF) volumetric curtailment data alongside System Prices directly from the modernized **Elexon Insights Solution REST API** to determine the financial "waste" caused by grid congestion.
@@ -45,7 +47,7 @@ pip install pandas requests streamlit plotly
 
 ### 2. Fetch Latest Market Data
 
-Run the data fetcher headless to pull the last 7 days of BMRS system prices and curtailment volumes into your local cash:
+Run the data fetcher headless to pull the last 7 days of BMRS system prices and curtailment volumes into your local cache:
 
 ```bash
 python data_fetcher.py
